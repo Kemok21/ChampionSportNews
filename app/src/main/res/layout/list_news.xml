@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingTop="@dimen/padding">
+
+    <TextView
+        android:id="@+id/section"
+        style="@style/TextLayoutSize"
+        android:text="Section: sport"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextLayoutSize"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintTop_toBottomOf="@id/section" />
+
+    <TextView
+        android:id="@+id/author"
+        style="@style/TextLayoutSize"
+        android:text="Author"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/TextLayoutSize"
+        android:text="2018-01-17"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author" />
+
+</android.support.constraint.ConstraintLayout>
